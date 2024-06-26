@@ -54,7 +54,6 @@ const Header = () => {
               priority
               className="flex-none"
             />
-            <h2 className="font-bold text-lg">Cesar</h2>
           </Link>
         </motion.div>
 
