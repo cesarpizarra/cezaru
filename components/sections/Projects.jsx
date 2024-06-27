@@ -5,6 +5,7 @@ import ProjectRight from "../ProjectRight";
 import { motion } from "framer-motion";
 import { staggerContainer, fadeIn } from "../../utils/motion";
 import TextSpan from "../TextSpan";
+import Link from "next/link";
 
 const Projects = () => {
   const sentence = "Projects".split("");
@@ -31,7 +32,7 @@ const Projects = () => {
           variants={fadeIn("up", "tween", 0.1, 0.6)}
           className="text-lg"
         >
-          Here are the projects that I&apos;ve built.
+          Here are some of the projects that I built.
         </motion.p>
       </motion.div>
 
@@ -50,13 +51,12 @@ const Projects = () => {
         viewport={{ once: "false", amount: 1 }}
         className="w-full flex items-center justify-center"
       >
-        <a
+        <Link
           href="/projects"
-          target="_blank"
           className="px-12 py-2.5 text-lg rounded-md text-wht border-[0.1rem] border-primary bg-primary/10 hover:bg-primary/[.05] font-medium transition-colors ease-in-out duration-200"
         >
           See more
-        </a>
+        </Link>
       </motion.div>
     </section>
   );

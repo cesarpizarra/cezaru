@@ -7,14 +7,14 @@ import { motion, AnimatePresence } from "framer-motion";
 import {
   staggerContainer,
   headerLinksVariants,
-  fade,
   mobileMenu,
   mobileMenuLink,
 } from "../../utils/motion";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-
+  const pathName = usePathname();
   const toggleMenu = () => {
     setIsOpen((prev) => !prev);
     const body = document.querySelector("body");
@@ -54,7 +54,6 @@ const Header = () => {
               priority
               className="flex-none"
             />
-            <h2 className="font-bold text-lg">Cesar</h2>
           </Link>
         </motion.div>
 
@@ -83,7 +82,11 @@ const Header = () => {
                 <motion.li
                   variants={headerLinksVariants}
                   key={link.title}
-                  className={link.cName}
+                  className={`${
+                    link.url === pathName
+                      ? 'text-primary relative after:content-[""] after:block after:mt-[.14rem] after:h-[.12rem] after:bg-primary after:duration-300 after:w-full'
+                      : link.cName
+                  }`}
                 >
                   <Link href={link.url}>{link.title}</Link>
                 </motion.li>
@@ -150,7 +153,11 @@ const Header = () => {
                       transition="transition"
                       exit="exit"
                       key={link.title}
-                      className={link.cName}
+                      className={`${
+                        link.url === pathName
+                          ? 'text-primary relative after:content-[""] after:block after:mt-[.14rem] after:h-[.12rem] after:bg-primary after:duration-300 after:w-full'
+                          : link.cName
+                      }`}
                       onClick={closeMenuByNavlist}
                     >
                       <Link href={link.url}>{link.title}</Link>

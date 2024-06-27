@@ -1,11 +1,19 @@
 import React from "react";
-import { contactData, emailLink } from "../../constants/home";
+import { contactData } from "../../constants/home";
 import TextSpan from "../TextSpan";
 import { motion } from "framer-motion";
 import { staggerContainer, fadeIn } from "../../utils/motion";
 
 const Contacts = () => {
   const sentence = "Get In Touch".split("");
+
+  const email = "cpizarra002@gmail.com";
+  const subject = "Hello from My Website";
+  const body = "I'd like to say hello!";
+
+  const emailLink = `mailto:${email}?subject=${encodeURIComponent(
+    subject
+  )}&body=${encodeURIComponent(body)}`;
   return (
     <section className="h-96 my-16">
       <motion.div

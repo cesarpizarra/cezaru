@@ -48,7 +48,7 @@ const projects = () => {
                 variants={fadeIn("up", "tween", 0.1, 0.6)}
                 className="text-lg"
               >
-                Here are the projects that I&apos;ve built.
+                Here are some of the projects that I built.
               </motion.p>
             </motion.div>
 

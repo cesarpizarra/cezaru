@@ -40,7 +40,7 @@ const skills = () => {
                 variants={fadeIn("up", "tween", 0.1, 0.6)}
                 className="text-lg"
               >
-                Technologies and tools that I use in building websites.
+                These are the technologies and tools I use.
               </motion.p>
             </motion.div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 lg:grid-cols-6">

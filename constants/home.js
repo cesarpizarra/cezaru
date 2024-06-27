@@ -1,6 +1,8 @@
 import { FaTiktok, FaFacebookF, FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
-
+import { MdCardTravel, MdMovie } from "react-icons/md";
+import { FaCode, FaBrain, FaBook, FaGamepad, FaCamera } from "react-icons/fa";
+import { GiCookingPot } from "react-icons/gi";
 export const navLinks = [
   {
     title: "About",
@@ -106,7 +108,7 @@ export const skills = [
     logo: "react.png",
   },
   {
-    name: "Next",
+    name: "Next Js",
     logo: "nextjs.png",
   },
   {
@@ -233,3 +235,38 @@ export const contactData = {
   title:
     "I am actively seeking opportunities as a web developer and would love to contribute to real projects while expanding my skill set. If you're interested, don't hesitate to reach out. I'm always available to connect and discuss potential collaborations.",
 };
+
+export const interests = [
+  {
+    icon: <FaCode size={20} />,
+    title: "Coding",
+  },
+  {
+    icon: <FaBrain size={20} />,
+    title: "Learning",
+  },
+  {
+    icon: <MdMovie size={20} />,
+    title: "Watching Movies",
+  },
+  {
+    icon: <FaGamepad size={20} />,
+    title: "Online Games",
+  },
+  {
+    icon: <FaBook size={20} />,
+    title: "Reading",
+  },
+  {
+    icon: <FaCamera size={20} />,
+    title: "Photography",
+  },
+  {
+    icon: <MdCardTravel size={20} />,
+    title: "Traveling",
+  },
+  {
+    icon: <GiCookingPot size={20} />,
+    title: "Cooking",
+  },
+];

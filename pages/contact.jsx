@@ -1,12 +1,19 @@
 import React from "react";
 import Head from "next/head";
-import { contactData, emailLink } from "../constants/home";
+import { contactData } from "../constants/home";
 import { motion } from "framer-motion";
 import { staggerContainer, fadeIn } from "../utils/motion";
 import TextSpan from "../components/TextSpan";
 
 const contact = () => {
   const sentence = "Get In Touch".split("");
+  const email = "cpizarra002@gmail.com";
+  const subject = "Hello from My Website";
+  const body = "I'd like to say hello!";
+
+  const emailLink = `mailto:${email}?subject=${encodeURIComponent(
+    subject
+  )}&body=${encodeURIComponent(body)}`;
   return (
     <>
       <Head>
