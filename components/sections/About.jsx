@@ -35,7 +35,7 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-14">
           <div>
             <motion.div
-              variants={fadeIn("up", "tween", 0.6, 0.8)}
+              variants={fadeIn("up", "tween", 0.2, 0.4)}
               className="mb-4"
             >
               <div className="mx-auto max-w-md">
@@ -51,7 +51,7 @@ const About = () => {
             </motion.div>
           </div>
           <motion.div
-            variants={fadeIn("up", "tween", 0.4, 0.8)}
+            variants={fadeIn("up", "tween", 0.2, 0.4)}
             className="flex flex-col space-y-4 text-justify"
           >
             {aboutData.heading.map((text, index) => (
