@@ -70,7 +70,7 @@ const about = () => {
               <div className="grid lg:grid-cols-2 gap-14">
                 <div>
                   <motion.div
-                    variants={fadeIn("up", "tween", 0.4, 0.8)}
+                    variants={fadeIn("up", "tween", 0.2, 0.4)}
                     initial="hidden"
                     whileInView="show"
                     viewport={{ once: "false", amount: 0.2 }}
@@ -89,7 +89,7 @@ const about = () => {
                   </motion.div>
                 </div>
                 <motion.div
-                  variants={fadeIn("up", "tween", 0.4, 0.8)}
+                  variants={fadeIn("up", "tween", 0.2, 0.4)}
                   initial="hidden"
                   whileInView="show"
                   viewport={{ once: "false", amount: 0.2 }}
