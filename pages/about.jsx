@@ -7,7 +7,7 @@ import TextSpan from "../components/TextSpan";
 import Image from "next/image";
 import InterestCard from "../components/InterestCard";
 import { FaGreaterThan } from "react-icons/fa";
-const About = () => {
+const about = () => {
   const sentence = "About".split("");
   const educationData = [
     {
@@ -31,6 +31,15 @@ const About = () => {
     <>
       <Head>
         <title>Cesar Pizarra | Portofolio</title>
+        <meta
+          name="description"
+          content="Cesar Pizarra is an aspiring frontend web developer passionate about creating visually appealing and user-friendly websites. Explore my portfolio to see my work and learn more about my skills and projects."
+        />
+
+        <meta
+          name="keywords"
+          content="cezaru, cesar pizarra, cesar, pizarra,"
+        />
         <meta name="author" content="cezaru" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/my-logo.png" />
@@ -203,4 +212,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default about;
