@@ -6,12 +6,12 @@ import { staggerContainer, fadeIn } from "../utils/motion";
 import TextSpan from "../components/TextSpan";
 import Image from "next/image";
 import InterestCard from "../components/InterestCard";
-
-const about = () => {
+import { FaGreaterThan } from "react-icons/fa";
+const About = () => {
   const sentence = "About".split("");
   const educationData = [
     {
-      year: "2023-2024 - Present",
+      year: "2023-2024 - Graduated",
       institution: "Don Mariano Marcos Memorial State University",
       degree: "Bachelor of Science in Computer Science",
     },
@@ -109,6 +109,46 @@ const about = () => {
                   viewport={{ once: "false", amount: 0.2 }}
                   className="text-xl lg:text-2xl font-bold text-whiteSecondary inline-block"
                 >
+                  Personal Information
+                </motion.h3>
+
+                <motion.ul
+                  variants={fadeIn("up", "tween", 0.2, 0.4)}
+                  initial="hidden"
+                  whileInView="show"
+                  viewport={{ once: "false", amount: 0.2 }}
+                  className="flex flex-col gap-4 mt-2"
+                >
+                  {Object.entries(aboutData.personal_info).map(
+                    ([key, value], index) => (
+                      <li key={index} className="flex items-center gap-2">
+                        <FaGreaterThan
+                          className="font-semibold text-primary"
+                          size={15}
+                        />
+                        <p className="text-md font-medium capitalize">
+                          {key === "birthDay"
+                            ? "Birth Day"
+                            : key === "phoneNumber"
+                            ? "Phone Number"
+                            : key}
+                          :{" "}
+                        </p>
+                        <span className="text-sm font-light">{value}</span>
+                      </li>
+                    )
+                  )}
+                </motion.ul>
+              </div>
+
+              <div className="mt-10">
+                <motion.h3
+                  variants={fadeIn("up", "tween", 0.2, 0.4)}
+                  initial="hidden"
+                  whileInView="show"
+                  viewport={{ once: "false", amount: 0.2 }}
+                  className="text-xl lg:text-2xl font-bold text-whiteSecondary inline-block"
+                >
                   Educational Background
                 </motion.h3>
                 <motion.div
@@ -120,7 +160,7 @@ const about = () => {
                 >
                   {educationData.map((edu, index) => (
                     <div key={index} className="mb-8 ml-6">
-                      <div className="absolute w-6 h-6 bg-primary rounded-full -left-3.5 border-4 border-white"></div>
+                      <div className="absolute w-4 h-4 bg-primary rounded-full -left-2.5 border-4 border-white"></div>
                       <div className=" p-6 rounded-md ">
                         <h3 className="text-lg font-semibold">
                           {edu.institution}
@@ -163,4 +203,4 @@ const about = () => {
   );
 };
 
-export default about;
+export default About;

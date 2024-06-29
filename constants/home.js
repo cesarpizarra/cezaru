@@ -3,6 +3,7 @@ import { AiFillInstagram } from "react-icons/ai";
 import { MdCardTravel, MdMovie } from "react-icons/md";
 import { FaCode, FaBrain, FaBook, FaGamepad, FaCamera } from "react-icons/fa";
 import { GiCookingPot } from "react-icons/gi";
+import { calculateAge, formatDate } from "../utils/date";
 export const navLinks = [
   {
     title: "About",
@@ -75,6 +76,7 @@ export const aboutData = {
     "Since then, my passion for web development has only grown stronger. I began my dedicated journey in 2022, diving into the world of coding and web technologies. With each project, I aim to push boundaries, deliver exceptional user experiences, and make a positive impact through technology.",
     "As I embark on this exciting path, I'm driven by curiosity, a thirst for learning, and a willingness to embrace challenges. I believe that web development holds immense potential, and I'm committed to honing my skills to create innovative web solutions that leave a lasting impression.",
   ],
+
   education: {
     course: "Bachelor of Science in Computer Science",
     school: "Don Mariano Marcos Memorial State University",
@@ -82,6 +84,15 @@ export const aboutData = {
   certification: {
     title: "Web Developer of the Year",
     school: "Don Mariano Marcos Memorial State University",
+  },
+
+  personal_info: {
+    birthDay: formatDate("2001-03-22"),
+    city: "San Fernando",
+    zipcode: "2509",
+    website: "https://cpizarra.vercel.app",
+    age: calculateAge("2001-03-22"),
+    email: "cpizarra002@gmail.com",
   },
 };
 
