@@ -85,7 +85,7 @@ const about = () => {
                     viewport={{ once: "false", amount: 0.2 }}
                     className="mb-4"
                   >
-                    <div className="mx-auto max-w-md">
+                    <div className="max-w-md">
                       <Image
                         src="/cezar.jpg"
                         width="400"
@@ -126,7 +126,7 @@ const about = () => {
                   initial="hidden"
                   whileInView="show"
                   viewport={{ once: "false", amount: 0.2 }}
-                  className="flex flex-col gap-4 mt-2"
+                  className="grid md:grid-cols-2 gap-4 mt-2"
                 >
                   {Object.entries(aboutData.personal_info).map(
                     ([key, value], index) => (
