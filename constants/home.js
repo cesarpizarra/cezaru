@@ -25,11 +25,11 @@ export const navLinks = [
     cName: "nav_item",
     url: "/contact",
   },
-  {
-    title: "Resume",
-    url: "#",
-    cName: "cta_resume",
-  },
+  // {
+  //   title: "Resume",
+  //   url: "#",
+  //   cName: "cta_resume",
+  // },
 ];
 
 export const emailLink =
@@ -175,13 +175,13 @@ export const projects = [
   },
 
   {
-    title: "Todo App",
+    title: "Naruto Characters",
     description:
-      "A Todo App with a dark/light mode theme switcher and local storage. A challenge from the Frontend Mentor website.",
-    techsUsed: ["Next", "Tailwind"],
-    image: "todo-app.png",
-    liveUrl: "https://todo-app-teal-nu.vercel.app/",
-    githubUrl: "https://github.com/cesarpizarra/todo-app",
+      "Explore the rich world of Naruto Shippuden characters. Discover detailed profiles, captivating backstories, and unique abilities of your favorite ninjas.",
+    techsUsed: ["Next", "Tailwind", "Dattebayo API "],
+    image: "naruto.png",
+    liveUrl: "https://naruto-black.vercel.app/",
+    githubUrl: "https://github.com/cesarpizarra/naruto",
   },
 
   {
@@ -197,48 +197,81 @@ export const projects = [
 
 export const otherProjects = [
   {
-    title: "Faculty Evaluation System",
+    title: "Intro Section Dropdown",
     description:
-      "A simple UI for Faculty Evaluation System that I created to apply what I've learned in Tailwindcss.",
-    techsUsed: ["HTML", "CSS", "Javascript", "Tailwind"],
-    image: "faculty-evaluation.png",
-    liveUrl: "https://facultyevaluationsytem-cb.netlify.app/",
-    githubUrl: "https://github.com/sezaru-dev/faculty-evaluation-system",
+      "A Intro Section with Dropdown Navigation challenge from the Frontend Mentor website.",
+    techsUsed: ["React", "Vite", "Tailwind"],
+    image: "intro-section.png",
+    liveUrl:
+      "https://cesarpizarra.github.io/intro-section-with-dropdown-navigation-main/",
+    githubUrl:
+      "https://github.com/cesarpizarra/intro-section-with-dropdown-navigation-main",
   },
   {
-    title: "Hiragana Multiple Choice",
+    title: "Todo App",
     description:
-      "A simple Hiragana Multiple Choice App that I created when I started learning Javascript. Aims to make memorizing Japanese Hiragana fun.",
-    techsUsed: ["HTML", "CSS", "Javascript"],
-    image: "hiragana-multiple-choice.png",
-    liveUrl: "https://hiraganamultiplechoice.netlify.app/",
-    githubUrl: "https://github.com/sezaru-dev/hiragana-multiple-choice",
+      "A Todo App with a dark/light mode theme switcher and local storage. A challenge from the Frontend Mentor website.",
+    techsUsed: ["React", "Vite", "Tailwind"],
+    image: "todo-app.png",
+    liveUrl: "https://todo-app-teal-nu.vercel.app/",
+    githubUrl: "https://github.com/cesarpizarra/todo-app",
+  },
+
+  {
+    title: "My first Front-end web developer portfolio website.",
+    description:
+      "This project marks the beginning of my journey as a front-end web developer. My first portfolio website was designed to present my initial work, skills, and experiences in web development. It served as a platform to showcase my growth and dedication to learning the craft of web development.",
+    techsUsed: ["React", "Vite", "Tailwind"],
+    image: "portfolio.png",
+    liveUrl: "https://cezaru.vercel.app/",
+    githubUrl: "https://github.com/cesarpizarra/portfolio",
+  },
+
+  {
+    title: "Fylo dark theme landing page",
+    description:
+      "A Fylo landing page challenge from the Frontend Mentor website.",
+    techsUsed: ["React", "Vite", "Tailwind"],
+    image: "fylo.png",
+    liveUrl: "https://fylo-ashy.vercel.app/",
+    githubUrl: "https://github.com/cesarpizarra/fylo",
+  },
+
+  {
+    title: "Weather App",
+    description:
+      "Dynamic weather app with real-time updates and location-based forecasts.",
+    techsUsed: ["React", "Vite", "Tailwind"],
+    image: "weather-app.png",
+    liveUrl: "https://cesarpizarra.github.io/weather-app/",
+    githubUrl: "https://github.com/cesarpizarra/weather-app",
   },
   {
-    title: "Hiragana Memorization Game",
+    title: "Login Form",
     description:
-      "A simple Hiragana Memorization Game that I created when I started learning Javascript. Aims to make memorizing Japanese Hiragana fun when I'm studying Japanese Language.",
-    techsUsed: ["HTML", "CSS", "Javascript"],
-    image: "hiragana-memorization-game.png",
-    liveUrl: "https://hiraganamemorizationgame.netlify.app/",
-    githubUrl: "https://github.com/sezaru-dev/hiragana-memorization-game",
+      "This is a simple responsive login form created using Tailwind CSS and HTML and JavaScript.",
+    techsUsed: ["HTML", "CSS", "JS", "Tailwind"],
+    image: "login-form.png",
+    liveUrl: "https://cesarpizarra.github.io/loginform/",
+    githubUrl: "https://github.com/cesarpizarra/loginform",
   },
 ];
 
 export const schoolProjects = [
   {
-    title: "CCS FES",
+    title:
+      "Development of Student Information System for Academia De Sta. Cecilia Foundation Inc.",
     description:
-      "Automates the manual evaluation of College of Computer Studies Faculty Members.",
-    techsUsed: ["HTML", "CSS", "Javascript", "ASP.net", "MS Access"],
-    image: "ccsfes.png",
-  },
-  {
-    title: "Dr. Smart: An android application to diagnose patient's illness",
-    description:
-      "A simple app that diagnose patient's illness based on the symptoms provided.",
-    techsUsed: ["C#", "Unity"],
-    image: "drsmart.jpg",
+      "The thesis project involves the development of a robust Student Information System (SIS) tailored for Academia De Sta. Cecilia Foundation Inc. This system is designed to streamline various administrative tasks related to student management, including enrollment, grading, attendance tracking, and communication between students, parents, and faculty members. Leveraging modern technologies such as MongoDB for database management, Express.js for backend API development, React for the frontend user interface, and Node.js for server-side operations, the SIS offers enhanced scalability, performance, and data security. Tailwind CSS is utilized for efficient styling, ensuring a responsive and visually appealing user experience. Postman is employed for API testing and validation, ensuring reliability and functionality across the system.",
+    techsUsed: [
+      "MongoDb",
+      "Express Js",
+      "React",
+      "Node.js",
+      "Tailwind Css",
+      "Postman",
+    ],
+    image: "adscfi.png",
   },
 ];
 

@@ -7,15 +7,16 @@ import {
   schoolProjects,
 } from "../constants/home";
 import { motion } from "framer-motion";
-import { staggerContainer, fadeIn } from "../utils/motion";
+import { staggerContainer, fadeIn, socialVariants } from "../utils/motion";
 import TextSpan from "../components/TextSpan";
 import ProjectLeft from "../components/ProjectLeft";
 import ProjectRight from "../components/ProjectRight";
-
-const projects = () => {
+import { FiGithub } from "react-icons/fi";
+import { HiOutlineExternalLink } from "react-icons/hi";
+const Projects = () => {
   const projectSplit = "Projects".split("");
   const otherProjectSplit = "Other Projects".split("");
-  const schoolProjectSplit = "Thesis and Capstone Project".split("");
+  const schoolProjectSplit = "Thesis Project".split("");
   return (
     <>
       <Head>
@@ -70,30 +71,69 @@ const projects = () => {
               })}
             </div>
 
-            <div
-              className="border-t-4 mt-5 border-[0.1rem] border-primary bg-primary/10 hover:bg-primary/[.05]  rounded-b text-white px-4 py-3 shadow-md"
-              role="alert"
-            >
-              <div className="flex">
-                <div className="py-1">
-                  <svg
-                    className="fill-current h-6 w-6 text-white mr-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
+            <div className="mb-28">
+              <motion.div
+                variants={staggerContainer(0, 0)}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: "false", amount: 0.3 }}
+                className="mb-12"
+              >
+                <motion.h2
+                  variants={fadeIn("up", "tween", 0.1, 0.6)}
+                  className="text-4xl lg:text-5xl text-primary font-bold mb-4 inline-block"
+                >
+                  {schoolProjectSplit.map((letter, index) => (
+                    <TextSpan key={index}>
+                      {letter === " " ? "\u00a0" : letter}
+                    </TextSpan>
+                  ))}
+                </motion.h2>
+              </motion.div>
+
+              <div>
+                {schoolProjects.map((project, index) => (
+                  <motion.div
+                    variants={fadeIn("up", "tween", 0.2, 0.4)}
+                    initial="hidden"
+                    whileInView="show"
+                    viewport={{ once: "false", amount: 0.1 }}
+                    key={index}
+                    className="lg:flex items-center justify-between gap-10"
                   >
-                    <path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z" />
-                  </svg>
-                </div>
-                <div>
-                  <p className="font-bold">Hi, this is Cezaru!</p>
-                  <p className="text-sm">
-                    Other projects will be uploaded soon. Have a nice day!
-                  </p>
-                </div>
+                    <div className="w-full h-48 md:h-72 overflow-hidden rounded max-w-md mx-auto">
+                      <Image
+                        src={`/${project.image}`}
+                        alt={project.image}
+                        width={500}
+                        height={300}
+                        className="object-cover h-full object-fit rounded hover:scale-105 transition-all ease-in-out duration-300"
+                      />
+                    </div>
+                    <div>
+                      <h4 className="text-md font-semibold text-whiteSecondary py-2">
+                        {project.title}
+                      </h4>
+                      <p className="text-xs text-justify">
+                        {project.description}
+                      </p>
+                      <ul className="flex items-center  text-whiteSecondary text-sm space-x-2 flex-wrap mt-4">
+                        {project.techsUsed.map((technology, index) => (
+                          <li
+                            className="px-1 py-1 rounded-md text-xs bg-gray-500 bg-opacity-10"
+                            key={index}
+                          >
+                            {technology}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </motion.div>
+                ))}
               </div>
             </div>
 
-            {/* <div className=" mb-28">
+            <div className=" mb-28">
               <motion.div
                 variants={staggerContainer(0, 0)}
                 initial="hidden"
@@ -115,15 +155,13 @@ const projects = () => {
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-md md:max-w-none mx-auto gap-14 md:gap-8 mb-8">
                 {otherProjects.map((project, index) => (
-                  <motion.a
+                  <motion.div
                     variants={fadeIn("up", "tween", 0.2, 0.4)}
                     initial="hidden"
                     whileInView="show"
-                    viewport={{ once: "false", amount: 0.1 }}
-                    href={project.liveUrl}
-                    target="_blank"
+                    viewport={{ once: false, amount: 0.1 }}
                     key={index}
-                    className="rounded-md overflow-hidden"
+                    className="rounded-t-md overflow-hidden bg-darkSecondary flex flex-col h-full"
                   >
                     <div className="relative w-full h-48 overflow-hidden">
                       <Image
@@ -131,109 +169,17 @@ const projects = () => {
                         alt={project.image}
                         fill={true}
                         sizes="100vw"
-                        className="object-cover"
+                        className="object-cover hover:scale-105 transition-all ease-in-out duration-300"
                       />
                     </div>
-                    <div className="p-4 bg-darkSecondary">
-                      <h4 className="text-center text-xl font-semibold text-whiteSecondary mb-4">
+                    <div className="p-4 flex flex-col flex-grow">
+                      <h4 className="text-center text-lg font-semibold text-whiteSecondary mb-4">
                         {project.title}
                       </h4>
-
-                      <ul className="flex items-center justify-center text-whiteSecondary text-sm space-x-2 flex-wrap">
-                        {project.techsUsed.map((technology, index) => (
-                          <li className="px-1 py-1 rounded-md" key={index}>
-                            {technology}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </motion.a>
-                ))}
-              </div>
-            </div>
-
-            <div className=" mb-28">
-              <motion.div
-                variants={staggerContainer(0, 0)}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: "false", amount: 0.3 }}
-                className="mb-12"
-              >
-                <motion.h2
-                  variants={fadeIn("up", "tween", 0.1, 0.6)}
-                  className="text-4xl lg:text-5xl text-primary font-bold mb-4 inline-block"
-                >
-                  {schoolProjectSplit.map((letter, index) => (
-                    <TextSpan key={index}>
-                      {letter === " " ? "\u00a0" : letter}
-                    </TextSpan>
-                  ))}
-                </motion.h2>
-              </motion.div>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-md md:max-w-none mx-auto gap-14 md:gap-8 mb-8">
-                {schoolProjects.map((project, index) => {
-                  if (project.title === "") {
-                    return (
-                      <motion.div
-                        variants={fadeIn("up", "tween", 0.2, 0.4)}
-                        initial="hidden"
-                        whileInView="show"
-                        viewport={{ once: "false", amount: 0.1 }}
-                        whileHover={{ scale: 1.05 }}
-                        key={index}
-                        className="rounded-md overflow-hidden"
-                      >
-                        <div className="relative w-full h-48 overflow-hidden">
-                          <Image
-                            src={`/${project.image}`}
-                            alt={project.image}
-                            fill={true}
-                            sizes="100vw"
-                            className="object-fit"
-                          />
-                        </div>
-                        <div className="p-4 bg-darkSecondary">
-                          <h4 className="text-center text-xl font-semibold text-whiteSecondary mb-4">
-                            {project.title}
-                          </h4>
-
-                          <ul className="flex items-center justify-center text-whiteSecondary text-sm space-x-2 flex-wrap">
-                            {project.techsUsed.map((technology, index) => (
-                              <li className="px-1 py-1 rounded-md" key={index}>
-                                {technology}
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                      </motion.div>
-                    );
-                  }
-                  return (
-                    <motion.div
-                      variants={fadeIn("up", "tween", 0.2, 0.4)}
-                      initial="hidden"
-                      whileInView="show"
-                      viewport={{ once: "false", amount: 0.1 }}
-                      whileHover={{ scale: 1.05 }}
-                      key={index}
-                      className="rounded-md overflow-hidden"
-                    >
-                      <div className="relative w-full h-48 overflow-hidden">
-                        <Image
-                          src={`/${project.image}`}
-                          alt={project.image}
-                          fill={true}
-                          sizes="100vw"
-                          className="object-cover"
-                        />
-                      </div>
-                      <div className="p-4 bg-darkSecondary">
-                        <h4 className="text-center text-xl font-semibold text-whiteSecondary mb-4">
-                          {project.title}
-                        </h4>
-
+                      <p className="text-xs text-justify mb-4 flex-grow">
+                        {project.description}
+                      </p>
+                      <div className="flex items-center justify-between mt-auto">
                         <ul className="flex items-center justify-center text-whiteSecondary text-sm space-x-2 flex-wrap">
                           {project.techsUsed.map((technology, index) => (
                             <li className="px-1 py-1 rounded-md" key={index}>
@@ -241,12 +187,36 @@ const projects = () => {
                             </li>
                           ))}
                         </ul>
+                        <div className="flex items-center gap-3 text-primary">
+                          <motion.a
+                            variants={socialVariants(-4)}
+                            initial="hidden"
+                            whileHover="hover"
+                            href={project.githubUrl}
+                            className="cursor-pointer"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <FiGithub size={20} className="cursor-pointer" />
+                          </motion.a>
+                          <motion.a
+                            variants={socialVariants(-4)}
+                            initial="hidden"
+                            whileHover="hover"
+                            href={project.liveUrl}
+                            className="cursor-pointer"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <HiOutlineExternalLink size={20} />
+                          </motion.a>
+                        </div>
                       </div>
-                    </motion.div>
-                  );
-                })}
+                    </div>
+                  </motion.div>
+                ))}
               </div>
-            </div> */}
+            </div>
           </div>
         </section>
       </main>
@@ -254,4 +224,4 @@ const projects = () => {
   );
 };
 
-export default projects;
+export default Projects;
