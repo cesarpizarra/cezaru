@@ -1,12 +1,11 @@
 import React from "react";
 import { projects } from "../../constants/home";
-import ProjectLeft from "../ProjectLeft";
-import ProjectRight from "../ProjectRight";
 import { motion } from "framer-motion";
-import { staggerContainer, fadeIn } from "../../utils/motion";
+import { staggerContainer, fadeIn, socialVariants } from "../../utils/motion";
 import TextSpan from "../TextSpan";
 import Link from "next/link";
-
+import { FiGithub } from "react-icons/fi";
+import { HiOutlineExternalLink } from "react-icons/hi";
 const Projects = () => {
   const sentence = "Projects".split("");
   return (
@@ -35,14 +34,63 @@ const Projects = () => {
           Here are some of the projects that I built.
         </motion.p>
       </motion.div>
+      <div className="featured">
+        {projects.map((project, index) => (
+          <motion.div
+            variants={fadeIn("up", "tween", 0.2, 0.4)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: "false", amount: 0.1 }}
+            key={index}
+            className="featured__item"
+          >
+            <div className="featured__img-container">
+              <img src={project.image} alt="Featured Image" />
+            </div>
+            <div className="featured__content">
+              <h2 className="text-whiteSecondary font-semibold text-2xl">
+                {project.title}
+              </h2>
+              <ul className="flex items-center  text-whiteSecondary text-sm space-x-2 flex-wrap mt-4">
+                {project.techsUsed.map((technology, index) => (
+                  <li
+                    className="px-1 py-1 rounded-md text-xs bg-gray-500 bg-opacity-10"
+                    key={index}
+                  >
+                    {technology}
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-2">{project.description}</p>
 
-      <div className="grid grid-cols-1 gap-6 lg:gap-48 mb-8">
-        {projects.slice(0, 6).map((project, index) => {
-          if (index % 2 === 1) {
-            return <ProjectLeft key={index} project={project} />;
-          }
-          return <ProjectRight key={index} project={project} />;
-        })}
+              <div className="flex items-center gap-3 mt-8">
+                <motion.a
+                  variants={socialVariants(-4)}
+                  initial="hidden"
+                  whileHover="hover"
+                  href={project.liveUrl}
+                  className="cursor-pointer inline-flex items-center gap-2 bg-primary p-2 rounded"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Take a look
+                  <HiOutlineExternalLink size={20} />
+                </motion.a>
+                <motion.a
+                  variants={socialVariants(-4)}
+                  initial="hidden"
+                  whileHover="hover"
+                  href={project.githubUrl}
+                  className="cursor-pointer bg-darkPrimary bg-opacity-50 p-2 rounded-full"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FiGithub size={20} className="cursor-pointer" />
+                </motion.a>
+              </div>
+            </div>
+          </motion.div>
+        ))}
       </div>
       <motion.div
         variants={fadeIn("up", "tween", 0.1, 0.6)}

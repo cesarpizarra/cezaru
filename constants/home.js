@@ -165,15 +165,23 @@ export const skills = [
 ];
 
 export const projects = [
+  // {
+  //   title: "My Portfolio Website",
+  //   description: "My second Front-end web developer portfolio website.",
+  //   techsUsed: ["Next", "Tailwind", "Framer Motion"],
+  //   image: "portfolio2.png",
+  //   liveUrl: "https://cpizarra.vercel.app",
+  //   githubUrl: "#",
+  // },
   {
-    title: "My Portfolio Website",
-    description: "My second Front-end web developer portfolio website.",
-    techsUsed: ["Next", "Tailwind", "Framer Motion"],
-    image: "portfolio2.png",
-    liveUrl: "https://cpizarra.vercel.app",
-    githubUrl: "#",
+    title: "Pabuya",
+    description:
+      "The Ultimate TMDB Alternative for Discovering Thousands of Movies and TV Shows",
+    techsUsed: ["React", "TypeScript", "Tailwind", "TMDB API"],
+    image: "pabuya.png",
+    liveUrl: "https://pabuya.vercel.app/",
+    githubUrl: "https://github.com/cesarpizarra/pabuya",
   },
-
   {
     title: "Naruto Characters",
     description:

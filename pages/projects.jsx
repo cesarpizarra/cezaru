@@ -9,11 +9,9 @@ import {
 import { motion } from "framer-motion";
 import { staggerContainer, fadeIn, socialVariants } from "../utils/motion";
 import TextSpan from "../components/TextSpan";
-import ProjectLeft from "../components/ProjectLeft";
-import ProjectRight from "../components/ProjectRight";
 import { FiGithub } from "react-icons/fi";
 import { HiOutlineExternalLink } from "react-icons/hi";
-const Projects = () => {
+const projects = () => {
   const projectSplit = "Projects".split("");
   const otherProjectSplit = "Other Projects".split("");
   const schoolProjectSplit = "Thesis Project".split("");
@@ -62,13 +60,64 @@ const Projects = () => {
               </motion.p>
             </motion.div>
 
-            <div className="grid grid-cols-1 gap-6 lg:gap-48 mb-8">
-              {myProjects.slice(0, 3).map((project, index) => {
-                if (index % 2 === 1) {
-                  return <ProjectLeft key={index} project={project} />;
-                }
-                return <ProjectRight key={index} project={project} />;
-              })}
+            <div className="featured">
+              {myProjects.map((project, index) => (
+                <motion.div
+                  variants={fadeIn("up", "tween", 0.2, 0.4)}
+                  initial="hidden"
+                  whileInView="show"
+                  viewport={{ once: "false", amount: 0.1 }}
+                  key={index}
+                  className="featured__item"
+                >
+                  <div className="featured__img-container">
+                    <img src={project.image} alt="Featured Image" />
+                  </div>
+                  <div className="featured__content mt-4">
+                    <h2 className="text-whiteSecondary font-semibold text-2xl">
+                      {project.title}
+                    </h2>
+                    <span className="text-sm text-primary">Featured</span>
+                    <ul className="flex items-center  text-whiteSecondary text-sm space-x-2 flex-wrap mt-4">
+                      {project.techsUsed.map((technology, index) => (
+                        <li
+                          className="px-1 py-1 rounded-md text-xs bg-gray-500 bg-opacity-10"
+                          key={index}
+                        >
+                          {technology}
+                        </li>
+                      ))}
+                    </ul>
+                    <p className="mt-2">{project.description}</p>
+
+                    <div className="flex items-center gap-3 mt-8">
+                      <motion.a
+                        variants={socialVariants(-4)}
+                        initial="hidden"
+                        whileHover="hover"
+                        href={project.liveUrl}
+                        className="cursor-pointer inline-flex items-center gap-2 bg-primary p-2 rounded"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Take a look
+                        <HiOutlineExternalLink size={20} />
+                      </motion.a>
+                      <motion.a
+                        variants={socialVariants(-4)}
+                        initial="hidden"
+                        whileHover="hover"
+                        href={project.githubUrl}
+                        className="cursor-pointer bg-darkPrimary bg-opacity-50 p-2 rounded-full"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <FiGithub size={20} className="cursor-pointer" />
+                      </motion.a>
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
             </div>
 
             <div className="mb-28">
@@ -159,7 +208,7 @@ const Projects = () => {
                     variants={fadeIn("up", "tween", 0.2, 0.4)}
                     initial="hidden"
                     whileInView="show"
-                    viewport={{ once: false, amount: 0.1 }}
+                    viewport={{ once: "false", amount: 0.1 }}
                     key={index}
                     className="rounded-t-md overflow-hidden bg-darkSecondary flex flex-col h-full"
                   >
@@ -224,4 +273,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default projects;
