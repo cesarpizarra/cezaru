@@ -108,7 +108,7 @@ const projects = () => {
                         initial="hidden"
                         whileHover="hover"
                         href={project.githubUrl}
-                        className="cursor-pointer bg-darkPrimary bg-opacity-50 p-2 rounded-full"
+                        className="cursor-pointer bg-gray-500 bg-opacity-50 p-2 rounded-full"
                         target="_blank"
                         rel="noopener noreferrer"
                       >

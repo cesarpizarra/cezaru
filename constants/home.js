@@ -25,11 +25,11 @@ export const navLinks = [
     cName: "nav_item",
     url: "/contact",
   },
-  // {
-  //   title: "Resume",
-  //   url: "#",
-  //   cName: "cta_resume",
-  // },
+  {
+    title: "Resume",
+    url: "https://drive.google.com/file/d/1ISmsDcVb4MQlNhmOh78hjvrKZqsFwxfA/view?usp=drive_link",
+    cName: "cta_resume",
+  },
 ];
 
 export const emailLink =
@@ -165,14 +165,6 @@ export const skills = [
 ];
 
 export const projects = [
-  // {
-  //   title: "My Portfolio Website",
-  //   description: "My second Front-end web developer portfolio website.",
-  //   techsUsed: ["Next", "Tailwind", "Framer Motion"],
-  //   image: "portfolio2.png",
-  //   liveUrl: "https://cpizarra.vercel.app",
-  //   githubUrl: "#",
-  // },
   {
     title: "Pabuya",
     description:
@@ -186,7 +178,7 @@ export const projects = [
     title: "Naruto Characters",
     description:
       "Explore the rich world of Naruto Shippuden characters. Discover detailed profiles, captivating backstories, and unique abilities of your favorite ninjas.",
-    techsUsed: ["Next", "Tailwind", "Dattebayo API "],
+    techsUsed: ["Next", "TypeScript", "Tailwind", "Dattebayo API "],
     image: "naruto.png",
     liveUrl: "https://naruto-black.vercel.app/",
     githubUrl: "https://github.com/cesarpizarra/naruto",
@@ -204,6 +196,14 @@ export const projects = [
 ];
 
 export const otherProjects = [
+  {
+    title: "My Portfolio Website",
+    description: "My second Front-end web developer portfolio website.",
+    techsUsed: ["Next", "Tailwind", "Framer Motion"],
+    image: "portfolio2.png",
+    liveUrl: "https://cpizarra.vercel.app",
+    githubUrl: "https://github.com/cesarpizarra/portfolio-website-v2",
+  },
   {
     title: "Intro Section Dropdown",
     description:
@@ -276,6 +276,7 @@ export const schoolProjects = [
       "Express Js",
       "React",
       "Node.js",
+      "TypeScript",
       "Tailwind Css",
       "Postman",
     ],

@@ -32,13 +32,13 @@
   width: 100%;
   display: flex;
   position: relative;
-  margin: 10rem 0;
+  margin: 8rem 0;
 }
 
 @media screen and (max-width: 600px) {
   .featured__item {
     flex-direction: column;
-    margin: 16rem 0;
+    margin: 10rem 0;
   }
 }
 

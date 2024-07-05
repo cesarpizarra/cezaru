@@ -51,6 +51,7 @@ const Projects = () => {
               <h2 className="text-whiteSecondary font-semibold text-2xl">
                 {project.title}
               </h2>
+              <span className="text-sm text-primary">Featured</span>
               <ul className="flex items-center  text-whiteSecondary text-sm space-x-2 flex-wrap mt-4">
                 {project.techsUsed.map((technology, index) => (
                   <li
@@ -81,7 +82,7 @@ const Projects = () => {
                   initial="hidden"
                   whileHover="hover"
                   href={project.githubUrl}
-                  className="cursor-pointer bg-darkPrimary bg-opacity-50 p-2 rounded-full"
+                  className="cursor-pointer bg-gray-500 bg-opacity-50 p-2 rounded-full"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
