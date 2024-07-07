@@ -168,8 +168,8 @@ export const projects = [
   {
     title: "Pabuya",
     description:
-      "The Ultimate TMDB & IMDB Alternative for Discovering Thousands of Movies and TV Shows",
-    techsUsed: ["React", "TypeScript", "Tailwind", "TMDB + IMDB API"],
+      "The Ultimate TMDB  Alternative for Discovering Thousands of Movies and TV Shows",
+    techsUsed: ["React", "TypeScript", "Tailwind", "TMDB API"],
     image: "pabuya.png",
     liveUrl: "https://pabuya.vercel.app/",
     githubUrl: "https://github.com/cesarpizarra/pabuya",
