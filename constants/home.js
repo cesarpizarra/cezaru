@@ -67,7 +67,7 @@ export const heroData = {
   name: "Cesar Pizarra",
   subheading: "Let's build something great together!",
   description:
-    "I'm an aspiring front-end web developer passionate about bringing innovative and accessible web designs to life.",
+    "I'm an aspiring  Web Developer passionate about bringing innovative and accessible web designs to life.",
 };
 
 export const aboutData = {
@@ -168,8 +168,8 @@ export const projects = [
   {
     title: "Pabuya",
     description:
-      "The Ultimate TMDB Alternative for Discovering Thousands of Movies and TV Shows",
-    techsUsed: ["React", "TypeScript", "Tailwind", "TMDB API"],
+      "The Ultimate TMDB & IMDB Alternative for Discovering Thousands of Movies and TV Shows",
+    techsUsed: ["React", "TypeScript", "Tailwind", "TMDB + IMDB API"],
     image: "pabuya.png",
     liveUrl: "https://pabuya.vercel.app/",
     githubUrl: "https://github.com/cesarpizarra/pabuya",

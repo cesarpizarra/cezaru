@@ -74,7 +74,7 @@ const Projects = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Take a look
+                  take a look
                   <HiOutlineExternalLink size={20} />
                 </motion.a>
                 <motion.a
