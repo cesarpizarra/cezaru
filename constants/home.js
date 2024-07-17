@@ -27,7 +27,7 @@ export const navLinks = [
   },
   {
     title: "Resume",
-    url: "https://drive.google.com/file/d/1eoO7zyV_8ebSYSWzGXna9h0hhGIW2OKT/view?usp=sharing",
+    url: "https://drive.google.com/file/d/1pFOJW9_ubHJtihlb4p3kWw9xUAs-KyIQ/view?usp=sharing",
     cName: "cta_resume",
   },
 ];

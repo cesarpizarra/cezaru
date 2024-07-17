@@ -18,7 +18,7 @@ const projects = () => {
   return (
     <>
       <Head>
-        <title>Cesar Pizarra | Portofolio</title>
+        <title>Cesar Pizarra | Portfolio</title>
         <meta
           name="description"
           content="Cesar Pizarra is an aspiring frontend web developer passionate about creating visually appealing and user-friendly websites. Explore my portfolio to see my work and learn more about my skills and projects."
