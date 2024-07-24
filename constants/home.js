@@ -175,10 +175,19 @@ export const projects = [
     githubUrl: "https://github.com/cesarpizarra/pabuya",
   },
   {
+    title: "Amazon Clone",
+    description:
+      "Clone of Amazon's shopping experience with product details, reviews, and a responsive design.",
+    techsUsed: ["React", "TypeScript", "Tailwind", "DaisyUI", "DummyJSON API"],
+    image: "amazon.png",
+    liveUrl: "https://cesarpizarra.github.io/amazon-clone/",
+    githubUrl: "https://github.com/cesarpizarra/amazon-clone",
+  },
+  {
     title: "Naruto Characters",
     description:
       "Explore the rich world of Naruto Shippuden characters. Discover detailed profiles, captivating backstories, and unique abilities of your favorite ninjas.",
-    techsUsed: ["Next", "TypeScript", "Tailwind", "Dattebayo API "],
+    techsUsed: ["Next", "TypeScript", "Tailwind", "Dattebayo API"],
     image: "naruto.png",
     liveUrl: "https://naruto-black.vercel.app/",
     githubUrl: "https://github.com/cesarpizarra/naruto",
@@ -189,7 +198,7 @@ export const projects = [
     description:
       "A Bookmark Landing Page challenge from the Frontend Mentor website.",
     techsUsed: ["React", "Vite", "Tailwind"],
-    image: "bookmark-landingpage.png",
+    image: "bookmark.png",
     liveUrl: "https://bookmark-landing-page-ten-silk.vercel.app/",
     githubUrl: "https://github.com/cesarpizarra/bookmark-landing-page",
   },
