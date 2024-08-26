@@ -18,6 +18,9 @@ const Projects = () => {
       >
         <motion.h2
           variants={fadeIn("up", "tween", 0.1, 0.6)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: "false", amount: 0.45 }}
           className="mb-4 inline-flex items-center gap-2 text-3xl font-bold tracking-wide lg:text-4xl"
         >
           Projects <MdAssignment />
@@ -29,7 +32,7 @@ const Projects = () => {
           Here are some of the projects that I built.
         </motion.p>
 
-        <div className="mt-8 grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, i) => (
             <motion.div
               variants={fadeIn("up", "tween", 0.2, 0.4)}
@@ -51,16 +54,7 @@ const Projects = () => {
               <div className="card-body">
                 <h2 className="card-title">{project.title}</h2>
                 <p className="text-sm">{project.description}</p>
-                <ul className="text-whiteSecondary flex flex-wrap items-center gap-2 space-x-2 text-sm">
-                  {project.techsUsed.map((technology, index) => (
-                    <li
-                      className="rounded-md bg-gray-500 bg-opacity-10 px-1 py-1 text-xs"
-                      key={index}
-                    >
-                      {technology}
-                    </li>
-                  ))}
-                </ul>
+
                 {project.githubUrl && project.liveUrl && (
                   <div className="card-actions mt-5 justify-end">
                     <motion.a

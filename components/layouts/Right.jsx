@@ -1,7 +1,7 @@
 import React from "react";
-import { emailLink } from "../../constants/home";
 import { motion } from "framer-motion";
 import { socialVariants } from "../../utils/motion";
+import { emailLink } from "../../constants/home";
 
 const Right = () => {
   return (

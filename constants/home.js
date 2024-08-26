@@ -42,8 +42,13 @@ export const navLinks = [
   // },
 ];
 
-export const emailLink =
-  "https://mail.google.com/mail/u/0/?to=cpizarra002@gmail.com&su=&body=&fs=1&tf=cm";
+const email = "cpizarra002@gmail.com";
+const subject = "Hello from My Website";
+const body = "I'd like to say hello!";
+
+export const emailLink = `mailto:${email}?subject=${encodeURIComponent(
+  subject,
+)}&body=${encodeURIComponent(body)}`;
 
 export const footerSocials = [
   {

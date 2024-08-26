@@ -34,14 +34,14 @@ const Skills = () => {
           <div className="flex flex-col gap-10 py-8">
             <div>
               <motion.h2
-                variants={fadeIn("up", "tween", 0.1, 0.4)}
+                variants={fadeIn("up", "tween", 0.1, 0.6)}
                 className="pb-2 text-center text-2xl tracking-wide"
               >
                 Frontend
               </motion.h2>
 
               <motion.div
-                variants={fadeIn("up", "tween", 0.2, 0.4)}
+                variants={fadeIn("up", "tween", 0.2, 0.6)}
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: "false", amount: 0.1 }}
@@ -60,14 +60,14 @@ const Skills = () => {
 
             <div>
               <motion.h2
-                variants={fadeIn("up", "tween", 0.1, 0.4)}
+                variants={fadeIn("up", "tween", 0.1, 0.6)}
                 className="pb-2 text-center text-2xl tracking-wide"
               >
                 Backend
               </motion.h2>
 
               <motion.div
-                variants={fadeIn("up", "tween", 0.2, 0.4)}
+                variants={fadeIn("up", "tween", 0.2, 0.6)}
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: "false", amount: 0.1 }}
