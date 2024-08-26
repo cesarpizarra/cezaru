@@ -1,11 +1,11 @@
 import Layout from "../components/layouts/Layout";
 import "../styles/globals.css";
-import { Kanit } from "@next/font/google";
+import { Lexend } from "@next/font/google";
 
-const kanit = Kanit({
+const lexend = Lexend({
   weight: ["300", "400", "500", "600", "700"],
   subsets: ["latin"],
-  variable: "--font-kanit",
+  variable: "--font-lexend",
   display: "fallback",
 });
 
@@ -15,7 +15,7 @@ export default function App({ Component, pageProps }) {
       <style jsx global>
         {`
           html {
-            font-family: ${kanit.style.fontFamily};
+            font-family: ${lexend.style.fontFamily};
           }
         `}
       </style>

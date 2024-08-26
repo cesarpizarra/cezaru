@@ -6,30 +6,40 @@ import { GiCookingPot } from "react-icons/gi";
 import { calculateAge, formatDate } from "../utils/date";
 export const navLinks = [
   {
+    title: "Home",
+    cName: "nav_item",
+    url: "#",
+  },
+  {
     title: "About",
     cName: "nav_item",
-    url: "/about",
+    url: "#about",
   },
   {
     title: "Skills",
     cName: "nav_item",
-    url: "/skills",
+    url: "#skills",
   },
   {
     title: "Projects",
     cName: "nav_item",
-    url: "/projects",
+    url: "#projects",
+  },
+  {
+    title: "Work",
+    cName: "nav_item",
+    url: "#work",
   },
   {
     title: "Contact",
     cName: "nav_item",
-    url: "/contact",
+    url: "#contact",
   },
-  {
-    title: "Resume",
-    url: "https://drive.google.com/file/d/1pFOJW9_ubHJtihlb4p3kWw9xUAs-KyIQ/view?usp=sharing",
-    cName: "cta_resume",
-  },
+  // {
+  //   title: "Resume",
+  //   url: "https://drive.google.com/file/d/1pFOJW9_ubHJtihlb4p3kWw9xUAs-KyIQ/view?usp=sharing",
+  //   cName: "cta_resume",
+  // },
 ];
 
 export const emailLink =
@@ -64,10 +74,10 @@ export const footerSocials = [
 ];
 
 export const heroData = {
-  name: "Cesar Pizarra",
-  subheading: "Let's build something great together!",
+  name: "Hi, I'm Cesar!",
+  subheading: "I bring ideas to the web.",
   description:
-    "I'm an aspiring  Web Developer passionate about bringing innovative and accessible web designs to life.",
+    "I'm passionate about bringing innovative and accessible designs to life.",
 };
 
 export const aboutData = {
@@ -164,6 +174,33 @@ export const skills = [
   },
 ];
 
+export const frontend = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "Tailwind CSS",
+  "Bootstrap",
+  "React",
+  "Next.js",
+  "TypeScript",
+  "Vite",
+  "Figma",
+  "Node.js",
+  "Mobile Responsive",
+  "Git",
+];
+
+export const backend = [
+  "Express",
+  "Node.js",
+  "Next.js",
+  "TypeScript",
+  "MongoDB",
+  "MySQL",
+  "Postman",
+  "Git",
+];
+
 export const projects = [
   {
     title: "Pabuya",
@@ -175,13 +212,22 @@ export const projects = [
     githubUrl: "https://github.com/cesarpizarra/pabuya",
   },
   {
-    title: "Amazon Clone",
+    title:
+      "Development of Student Information System for Academia De Sta. Cecilia Foundation Inc.",
     description:
-      "Clone of Amazon's shopping experience with product details, reviews, and a responsive design.",
-    techsUsed: ["React", "TypeScript", "Tailwind", "DaisyUI", "DummyJSON API"],
-    image: "amazon.png",
-    liveUrl: "https://cesarpizarra.github.io/amazon-clone/",
-    githubUrl: "https://github.com/cesarpizarra/amazon-clone",
+      "This is our thesis project: a Student Information System (SIS) for Academia De Sta. Cecilia Foundation Inc",
+    techsUsed: [
+      "MongoDb",
+      "Express Js",
+      "React",
+      "Node.js",
+      "TypeScript",
+      "Tailwind Css",
+      "Postman",
+    ],
+    image: "adscfi.png",
+    liveUrl: null,
+    githubUrl: null,
   },
   {
     title: "Naruto Characters",
@@ -202,27 +248,14 @@ export const projects = [
     liveUrl: "https://bookmark-landing-page-ten-silk.vercel.app/",
     githubUrl: "https://github.com/cesarpizarra/bookmark-landing-page",
   },
-];
-
-export const otherProjects = [
   {
-    title: "My Portfolio Website",
-    description: "My second Front-end web developer portfolio website.",
-    techsUsed: ["Next", "Tailwind", "Framer Motion"],
-    image: "portfolio2.png",
-    liveUrl: "https://cpizarra.vercel.app",
-    githubUrl: "https://github.com/cesarpizarra/portfolio-website-v2",
-  },
-  {
-    title: "Intro Section Dropdown",
+    title: "Amazon Clone",
     description:
-      "A Intro Section with Dropdown Navigation challenge from the Frontend Mentor website.",
-    techsUsed: ["React", "Vite", "Tailwind"],
-    image: "intro-section.png",
-    liveUrl:
-      "https://cesarpizarra.github.io/intro-section-with-dropdown-navigation-main/",
-    githubUrl:
-      "https://github.com/cesarpizarra/intro-section-with-dropdown-navigation-main",
+      "Clone of Amazon's shopping experience with product details, reviews, and a responsive design.",
+    techsUsed: ["React", "TypeScript", "Tailwind", "DaisyUI", "DummyJSON API"],
+    image: "amazon.png",
+    liveUrl: "https://cesarpizarra.github.io/amazon-clone/",
+    githubUrl: "https://github.com/cesarpizarra/amazon-clone",
   },
   {
     title: "Todo App",
@@ -235,26 +268,6 @@ export const otherProjects = [
   },
 
   {
-    title: "My first Front-end web developer portfolio website.",
-    description:
-      "This project marks the beginning of my journey as a front-end web developer. My first portfolio website was designed to present my initial work, skills, and experiences in web development. It served as a platform to showcase my growth and dedication to learning the craft of web development.",
-    techsUsed: ["React", "Vite", "Tailwind"],
-    image: "portfolio.png",
-    liveUrl: "https://cezaru.vercel.app/",
-    githubUrl: "https://github.com/cesarpizarra/portfolio",
-  },
-
-  {
-    title: "Fylo dark theme landing page",
-    description:
-      "A Fylo landing page challenge from the Frontend Mentor website.",
-    techsUsed: ["React", "Vite", "Tailwind"],
-    image: "fylo.png",
-    liveUrl: "https://fylo-ashy.vercel.app/",
-    githubUrl: "https://github.com/cesarpizarra/fylo",
-  },
-
-  {
     title: "Weather App",
     description:
       "Dynamic weather app with real-time updates and location-based forecasts.",
@@ -263,33 +276,26 @@ export const otherProjects = [
     liveUrl: "https://cesarpizarra.github.io/weather-app/",
     githubUrl: "https://github.com/cesarpizarra/weather-app",
   },
-  {
-    title: "Login Form",
-    description:
-      "This is a simple responsive login form created using Tailwind CSS and HTML and JavaScript.",
-    techsUsed: ["HTML", "CSS", "JS", "Tailwind"],
-    image: "login-form.png",
-    liveUrl: "https://cesarpizarra.github.io/loginform/",
-    githubUrl: "https://github.com/cesarpizarra/loginform",
-  },
 ];
 
-export const schoolProjects = [
+export const workExperience = [
   {
-    title:
-      "Development of Student Information System for Academia De Sta. Cecilia Foundation Inc.",
-    description:
-      "The thesis project involves the development of a robust Student Information System (SIS) tailored for Academia De Sta. Cecilia Foundation Inc. This system is designed to streamline various administrative tasks related to student management, including enrollment, grading, attendance tracking, and communication between students, parents, and faculty members. Leveraging modern technologies such as MongoDB for database management, Express.js for backend API development, React for the frontend user interface, and Node.js for server-side operations, the SIS offers enhanced scalability, performance, and data security. Tailwind CSS is utilized for efficient styling, ensuring a responsive and visually appealing user experience. Postman is employed for API testing and validation, ensuring reliability and functionality across the system.",
-    techsUsed: [
-      "MongoDb",
-      "Express Js",
-      "React",
-      "Node.js",
-      "TypeScript",
-      "Tailwind Css",
-      "Postman",
-    ],
-    image: "adscfi.png",
+    position: "Full Stack Developer",
+    company: "at Nord Oaks BPO",
+    date: "2024 - Current - Full-time",
+    isCurrent: true,
+  },
+  {
+    position: "Web Developer",
+    company: "Freelance Self Employed",
+    date: "2023 - 2024  - Freelance",
+    isCurrent: false,
+  },
+  {
+    position: "Government Internship Program (GIP)",
+    company: "Office of the House of Representative",
+    date: "2 months - 2023 - On-the-job training",
+    isCurrent: false,
   },
 ];
 

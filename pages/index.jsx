@@ -4,6 +4,7 @@ import About from "../components/sections/About";
 import Skills from "../components/sections/Skills";
 import Projects from "../components/sections/Projects";
 import Contacts from "../components/sections/Contacts";
+import Work from "../components/sections/Work";
 
 export default function Home() {
   return (
@@ -23,11 +24,12 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/my-logo.png" />
       </Head>
-      <main className="relative max-w-6xl px-5 md:px-10 lg:px-12 xl:px-0 mx-auto z-20">
+      <main className="relative z-20 mx-auto max-w-6xl px-5 md:px-10 lg:px-12 xl:px-0">
         <Hero />
         <About />
         <Skills />
         <Projects />
+        <Work />
         <Contacts />
       </main>
     </>

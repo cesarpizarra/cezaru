@@ -5,7 +5,7 @@ import { socialVariants } from "../../utils/motion";
 
 const Left = () => {
   return (
-    <div className="flex flex-col items-center justify-center gap-6 text-whiteSecondary">
+    <div className="flex flex-col items-center justify-center gap-6">
       <ul className="flex flex-col items-center gap-6">
         {footerSocials.map((social) => (
           <motion.li
@@ -18,14 +18,14 @@ const Left = () => {
               href={social.url}
               target="_blank"
               rel="noreferrer"
-              className="hover:text-primary transition-colors ease-in-out duration-200"
+              className="transition-colors duration-200 ease-in-out"
             >
               {social.logo}
             </a>
           </motion.li>
         ))}
       </ul>
-      <div className="w-[1px] h-24 bg-wht" />
+      <div className="h-24 w-[1px] bg-gray-500" />
     </div>
   );
 };

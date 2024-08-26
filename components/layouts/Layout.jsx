@@ -10,12 +10,12 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header />
-      <div className="fixed bottom-0 left-0 right-0 z-10 w-full hidden xl:block">
+      <div className="fixed bottom-0 left-0 right-0 z-10 hidden w-full xl:block">
         <motion.div
           variants={leftRightElementVariants}
           initial="hidden"
           animate="show"
-          className="relative max-w-[1536px] px-5 md:px-10 mx-auto flex items-end justify-between"
+          className="relative mx-auto flex max-w-[1536px] items-end justify-between px-5 md:px-10"
         >
           <Left />
           <Right />
