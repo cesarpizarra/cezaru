@@ -32,10 +32,13 @@ const Skills = () => {
           </motion.p>
 
           <div className="flex flex-col gap-10 py-8">
-            <motion.div variants={fadeIn("up", "tween", 0.1, 0.4)}>
-              <h2 className="pb-2 text-center text-2xl tracking-wide">
+            <div>
+              <motion.h2
+                variants={fadeIn("up", "tween", 0.1, 0.4)}
+                className="pb-2 text-center text-2xl tracking-wide"
+              >
                 Frontend
-              </h2>
+              </motion.h2>
 
               <motion.div
                 variants={fadeIn("up", "tween", 0.2, 0.4)}
@@ -53,12 +56,15 @@ const Skills = () => {
                   </button>
                 ))}
               </motion.div>
-            </motion.div>
+            </div>
 
-            <motion.div variants={fadeIn("up", "tween", 0.1, 0.4)}>
-              <h2 className="pb-2 text-center text-2xl tracking-wide">
+            <div>
+              <motion.h2
+                variants={fadeIn("up", "tween", 0.1, 0.4)}
+                className="pb-2 text-center text-2xl tracking-wide"
+              >
                 Backend
-              </h2>
+              </motion.h2>
 
               <motion.div
                 variants={fadeIn("up", "tween", 0.2, 0.4)}
@@ -76,7 +82,7 @@ const Skills = () => {
                   </button>
                 ))}
               </motion.div>
-            </motion.div>
+            </div>
           </div>
         </motion.div>
       </div>

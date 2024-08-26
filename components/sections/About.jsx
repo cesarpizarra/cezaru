@@ -45,8 +45,8 @@ const About = () => {
               </pre>
               <pre data-prefix="3">
                 <code className="text-sm">
-                  Hi there! I'm Cesar, a web developer fascinated by the power
-                  of websites
+                  Hi there! I&rsquo;m Cesar, a web developer fascinated by the
+                  power of websites
                 </code>
               </pre>
               <pre data-prefix="4">
@@ -85,8 +85,8 @@ const About = () => {
               </pre>
               <pre data-prefix="11">
                 <code className="text-sm">
-                  As I embark on this exciting path, I'm driven by curiosity, a
-                  thirst for learning,
+                  As I embark on this exciting path, I&rsquo;m driven by
+                  curiosity, a thirst for learning,
                 </code>
               </pre>
               <pre data-prefix="12">
@@ -97,8 +97,8 @@ const About = () => {
               </pre>
               <pre data-prefix="13">
                 <code className="text-sm">
-                  immense potential, and I'm committed to honing my skills to
-                  create innovative
+                  immense potential, and I&rsquo;m committed to honing my skills
+                  to create innovative
                 </code>
               </pre>
               <pre data-prefix="14">

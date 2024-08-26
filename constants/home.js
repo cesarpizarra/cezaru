@@ -207,7 +207,7 @@ export const projects = [
     description:
       "The Ultimate TMDB  Alternative for Discovering Thousands of Movies and TV Shows",
     techsUsed: ["React", "TypeScript", "Tailwind", "TMDB API"],
-    image: "pabuya.png",
+    image: "/pabuya.png",
     liveUrl: "https://pabuya.vercel.app/",
     githubUrl: "https://github.com/cesarpizarra/pabuya",
   },
@@ -225,7 +225,7 @@ export const projects = [
       "Tailwind Css",
       "Postman",
     ],
-    image: "adscfi.png",
+    image: "/adscfi.png",
     liveUrl: null,
     githubUrl: null,
   },
@@ -234,7 +234,7 @@ export const projects = [
     description:
       "Explore the rich world of Naruto Shippuden characters. Discover detailed profiles, captivating backstories, and unique abilities of your favorite ninjas.",
     techsUsed: ["Next", "TypeScript", "Tailwind", "Dattebayo API"],
-    image: "naruto.png",
+    image: "/naruto.png",
     liveUrl: "https://naruto-black.vercel.app/",
     githubUrl: "https://github.com/cesarpizarra/naruto",
   },
@@ -244,7 +244,7 @@ export const projects = [
     description:
       "A Bookmark Landing Page challenge from the Frontend Mentor website.",
     techsUsed: ["React", "Vite", "Tailwind"],
-    image: "bookmark.png",
+    image: "/bookmark.png",
     liveUrl: "https://bookmark-landing-page-ten-silk.vercel.app/",
     githubUrl: "https://github.com/cesarpizarra/bookmark-landing-page",
   },
@@ -253,7 +253,7 @@ export const projects = [
     description:
       "Clone of Amazon's shopping experience with product details, reviews, and a responsive design.",
     techsUsed: ["React", "TypeScript", "Tailwind", "DaisyUI", "DummyJSON API"],
-    image: "amazon.png",
+    image: "/amazon.png",
     liveUrl: "https://cesarpizarra.github.io/amazon-clone/",
     githubUrl: "https://github.com/cesarpizarra/amazon-clone",
   },
@@ -262,7 +262,7 @@ export const projects = [
     description:
       "A Todo App with a dark/light mode theme switcher and local storage. A challenge from the Frontend Mentor website.",
     techsUsed: ["React", "Vite", "Tailwind"],
-    image: "todo-app.png",
+    image: "/todo-app.png",
     liveUrl: "https://todo-app-teal-nu.vercel.app/",
     githubUrl: "https://github.com/cesarpizarra/todo-app",
   },
@@ -272,7 +272,7 @@ export const projects = [
     description:
       "Dynamic weather app with real-time updates and location-based forecasts.",
     techsUsed: ["React", "Vite", "Tailwind"],
-    image: "weather-app.png",
+    image: "/weather-app.png",
     liveUrl: "https://cesarpizarra.github.io/weather-app/",
     githubUrl: "https://github.com/cesarpizarra/weather-app",
   },

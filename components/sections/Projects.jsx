@@ -5,6 +5,7 @@ import { staggerContainer, fadeIn, socialVariants } from "../../utils/motion";
 import { MdAssignment } from "react-icons/md";
 import { FiGithub } from "react-icons/fi";
 import { HiOutlineExternalLink } from "react-icons/hi";
+import Image from "next/image";
 const Projects = () => {
   return (
     <section className="min-h-screen scroll-mt-36" id="projects">
@@ -39,16 +40,18 @@ const Projects = () => {
               className="card w-full bg-base-100 shadow-xl"
             >
               <figure className="relative h-64 w-full">
-                <img
+                <Image
                   src={project.image}
                   alt={project.title}
+                  width={500}
+                  height={500}
                   className="h-full w-full object-cover"
                 />
               </figure>
               <div className="card-body">
                 <h2 className="card-title">{project.title}</h2>
                 <p className="text-sm">{project.description}</p>
-                <ul className="flex flex-wrap items-center gap-2 space-x-2 text-sm text-whiteSecondary">
+                <ul className="text-whiteSecondary flex flex-wrap items-center gap-2 space-x-2 text-sm">
                   {project.techsUsed.map((technology, index) => (
                     <li
                       className="rounded-md bg-gray-500 bg-opacity-10 px-1 py-1 text-xs"

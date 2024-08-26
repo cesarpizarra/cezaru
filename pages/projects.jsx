@@ -32,7 +32,7 @@ const projects = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/my-logo.png" />
       </Head>
-      <main className="relative max-w-6xl px-5 md:px-10 lg:px-12 xl:px-0 mx-auto z-20">
+      <main className="relative z-20 mx-auto max-w-6xl px-5 md:px-10 lg:px-12 xl:px-0">
         <section className="min-h-screen pt-40 lg:pt-44" id="projects">
           <div className="w-full">
             <motion.div
@@ -44,7 +44,7 @@ const projects = () => {
             >
               <motion.h2
                 variants={fadeIn("up", "tween", 0.1, 0.6)}
-                className="text-4xl lg:text-5xl text-primary font-bold mb-4 inline-block"
+                className="mb-4 inline-block text-4xl font-bold text-primary lg:text-5xl"
               >
                 {projectSplit.map((letter, index) => (
                   <TextSpan key={index}>
@@ -60,7 +60,7 @@ const projects = () => {
               </motion.p>
             </motion.div>
 
-            <div className="featured">
+            {/* <div className="featured">
               {myProjects.map((project, index) => (
                 <motion.div
                   variants={fadeIn("up", "tween", 0.2, 0.4)}
@@ -71,7 +71,13 @@ const projects = () => {
                   className="featured__item"
                 >
                   <div className="featured__img-container">
-                    <img src={project.image} alt="Featured Image" />
+                  <Image
+                  src={project.image}
+                  alt={project.title}
+                  width={500}
+                  height={500}
+                  className="h-full w-full object-cover"
+                />
                   </div>
                   <div className="featured__content mt-4">
                     <h2 className="text-whiteSecondary font-semibold text-2xl">
@@ -118,9 +124,9 @@ const projects = () => {
                   </div>
                 </motion.div>
               ))}
-            </div>
+            </div> */}
 
-            <div className="mb-28">
+            {/* <div className="mb-28">
               <motion.div
                 variants={staggerContainer(0, 0)}
                 initial="hidden"
@@ -265,7 +271,7 @@ const projects = () => {
                   </motion.div>
                 ))}
               </div>
-            </div>
+            </div> */}
           </div>
         </section>
       </main>
