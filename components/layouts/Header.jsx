@@ -39,9 +39,7 @@ const Header = () => {
           </div>
         </div>
         <div className="navbar-center">
-          <a href="#" className="btn-ghost btn text-xl">
-            <Image src="/logo.png" width={100} height={100} alt="My logo" />
-          </a>
+          <h1 className="text-xl font-bold">CEZARU</h1>
         </div>
         <div className="navbar-end">
           <button

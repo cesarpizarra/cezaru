@@ -87,9 +87,9 @@ export const heroData = {
 
 export const aboutData = {
   heading: [
-    "Hi there! I'm Cesar, and I'm on a journey to pursue a career in web development. I've always been fascinated by the power of websites and their ability to solve problems and automate processes.",
+    "Hi there! I’m Cesar, a web developer fascinated by the power of websites to solve problems and automate processes.",
     "Since then, my passion for web development has only grown stronger. I began my dedicated journey in 2022, diving into the world of coding and web technologies. With each project, I aim to push boundaries, deliver exceptional user experiences, and make a positive impact through technology.",
-    "As I embark on this exciting path, I'm driven by curiosity, a thirst for learning, and a willingness to embrace challenges. I believe that web development holds immense potential, and I'm committed to honing my skills to create innovative web solutions that leave a lasting impression.",
+    "As I embark on this exciting path, I’m driven by curiosity, a thirst for learning, and a willingness to embrace challenges. I believe that web development holds immense potential, and I’m committed to honing my skills to create innovative web solutions that leave a lasting impression.",
   ],
 
   education: {
@@ -206,7 +206,7 @@ export const backend = [
   "Git",
 ];
 
-export const projects = [
+export const featuredProjects = [
   {
     title: "Pabuya",
     description:
@@ -243,7 +243,9 @@ export const projects = [
     liveUrl: "https://naruto-black.vercel.app/",
     githubUrl: "https://github.com/cesarpizarra/naruto",
   },
+];
 
+export const otherProjects = [
   {
     title: "Bookmark Landing Page",
     description:

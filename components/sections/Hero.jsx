@@ -1,9 +1,7 @@
 import React from "react";
-import { heroData } from "../../constants/home";
 import { motion } from "framer-motion";
 import { staggerContainer, fade } from "../../utils/motion";
-import TextSpan from "../TextSpan";
-import { IoIosArrowDown } from "react-icons/io";
+import Image from "next/image";
 const Hero = () => {
   return (
     <motion.section
@@ -11,44 +9,41 @@ const Hero = () => {
       variants={staggerContainer(0.4, 1.3)}
       initial="hidden"
       animate="show"
-      className="relative mb-20 flex min-h-screen w-full flex-col items-center justify-center text-center md:mb-0"
+      className="relative mb-20 flex min-h-screen w-full flex-col items-center justify-center text-center text-white md:mb-0"
     >
-      <motion.div className="mb-60">
-        <motion.h1
-          variants={fade(0.8, 0.4)}
-          className="mb-4 text-4xl font-bold tracking-wide lg:text-7xl"
-        >
-          {heroData.name.split("").map((letter, index) => (
-            <TextSpan key={index}>
-              {letter === " " ? "\u00a0" : letter}
-            </TextSpan>
-          ))}
-        </motion.h1>
-        <motion.h2
-          variants={fade(0.8, 0.5)}
-          className="mb-4 whitespace-normal text-xl font-bold tracking-wide lg:text-5xl"
-        >
-          {heroData.subheading.split("").map((letter, index) => {
-            if (letter === " ") {
-              return "\u00a0";
-            }
-            return (
-              <TextSpan key={index}>
-                {letter === " " ? "\u00a0" : letter}
-              </TextSpan>
-            );
-          })}
-        </motion.h2>
-        <motion.p
-          variants={fade(0.8, 0.7)}
-          className="text-base tracking-wide md:text-lg"
-        >
-          {heroData.description}
-        </motion.p>
-
-        <span className="absolute bottom-48 animate-bounce">
-          <IoIosArrowDown size={40} />
-        </span>
+      <motion.div className="mb-60 items-center md:flex">
+        <div className="mx-auto max-w-xs md:max-w-md">
+          <Image
+            src="/hero-img.png"
+            width={500}
+            height={500}
+            alt="My Image"
+            style={{ width: "100%", height: "auto" }}
+            className="-scale-x-100 rounded-md"
+          />
+        </div>
+        <div>
+          <motion.h1
+            variants={fade(0.8, 0.4)}
+            className="mb-4 text-4xl font-bold tracking-wide lg:text-7xl"
+          >
+            Hi, I&apos;m Cesar!
+          </motion.h1>
+          <motion.h2
+            variants={fade(0.8, 0.5)}
+            className="mb-4 whitespace-normal text-xl font-bold tracking-wide lg:text-5xl"
+          >
+            I bring <span className="text-warning">ideas</span> to the{" "}
+            <span className="text-primary">web</span>.
+          </motion.h2>
+          <motion.p
+            variants={fade(0.8, 0.7)}
+            className="text-base tracking-wide md:text-lg"
+          >
+            I&apos;m passionate about bringing innovative and accessible designs
+            to life.
+          </motion.p>
+        </div>
       </motion.div>
     </motion.section>
   );

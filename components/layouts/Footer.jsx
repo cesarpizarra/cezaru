@@ -5,10 +5,10 @@ import { socialVariants } from "../../utils/motion";
 
 const Footer = () => {
   return (
-    <section className="max-w-[1440px] px-5 md:px-10 py-6 mx-auto text-whiteSecondary">
+    <section className="text-whiteSecondary mx-auto max-w-[1440px] px-5 py-6 md:px-10">
       <footer>
-        <nav className="mb-4 lg:hidden">
-          <ul className=" flex items-center justify-center gap-8">
+        <nav className="mb-4">
+          <ul className="flex items-center justify-center gap-8">
             {footerSocials.map((social) => (
               <motion.li
                 variants={socialVariants(-3)}
@@ -20,7 +20,7 @@ const Footer = () => {
                   href={social.url}
                   target="_blank"
                   rel="noreferrer"
-                  className="hover:text-appPurple transition-colors ease-in-out duration-200"
+                  className="hover:text-appPurple transition-colors duration-200 ease-in-out"
                 >
                   {social.logo}
                 </a>
@@ -28,7 +28,7 @@ const Footer = () => {
             ))}
           </ul>
         </nav>
-        <p className="text-sm text-center">Built by Cesar G. Pizarra © 2024</p>
+        <p className="text-center text-sm">Built by Cesar G. Pizarra © 2024</p>
       </footer>
     </section>
   );
