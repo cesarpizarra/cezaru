@@ -58,7 +58,7 @@ const Projects = () => {
                         initial="hidden"
                         whileHover="hover"
                         href={project.githubUrl}
-                        className="tooltip cursor-pointer rounded-full border-2 bg-base-300 p-2"
+                        className="tooltip cursor-pointer rounded-full border-2 border-base-100 bg-base-300 p-2"
                         target="_blank"
                         rel="noopener noreferrer"
                         data-tip="View Repo"
@@ -71,7 +71,7 @@ const Projects = () => {
                         initial="hidden"
                         whileHover="hover"
                         href={project.liveUrl}
-                        className="tooltip cursor-pointer rounded-full border-2 bg-base-300 p-2"
+                        className="tooltip cursor-pointer rounded-full border-2 border-base-100 bg-base-300 p-2"
                         target="_blank"
                         rel="noopener noreferrer"
                         data-tip="Visit"
@@ -110,15 +110,6 @@ const Projects = () => {
                 key={i}
                 className="card w-full bg-base-100 shadow-xl"
               >
-                <figure className="relative h-64 w-full">
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    width={500}
-                    height={500}
-                    className="h-full w-full object-cover"
-                  />
-                </figure>
                 <div className="card-body">
                   <h2 className="text-md card-title">{project.title}</h2>
                   <p className="text-xs">{project.description}</p>
@@ -130,7 +121,7 @@ const Projects = () => {
                         initial="hidden"
                         whileHover="hover"
                         href={project.githubUrl}
-                        className="tooltip cursor-pointer rounded-full border-2 bg-base-300 p-2"
+                        className="tooltip cursor-pointer rounded-full border-2 border-base-100 bg-base-300 p-2"
                         target="_blank"
                         rel="noopener noreferrer"
                         data-tip="View Repo"
@@ -143,7 +134,7 @@ const Projects = () => {
                         initial="hidden"
                         whileHover="hover"
                         href={project.liveUrl}
-                        className="tooltip cursor-pointer rounded-full border-2 bg-base-300 p-2"
+                        className="tooltip cursor-pointer rounded-full border-2 border-base-100 bg-base-300 p-2"
                         target="_blank"
                         rel="noopener noreferrer"
                         data-tip="Visit"

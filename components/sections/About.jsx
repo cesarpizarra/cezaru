@@ -8,7 +8,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="mb-20 flex min-h-screen w-full flex-col items-center justify-center px-4 md:mb-0"
+      className="mb-20 flex min-h-screen w-full flex-col items-center justify-center md:mb-0"
     >
       <motion.div
         variants={staggerContainer(0.3, 0.2)}
@@ -35,7 +35,7 @@ const About = () => {
           </motion.div>
           <motion.div
             variants={fadeIn("up", "tween", 0.2, 0.4)}
-            className="w-full max-w-2xl space-y-4 rounded-md p-4 text-justify text-sm tracking-wide"
+            className="w-full max-w-2xl space-y-4 rounded-md text-justify text-sm tracking-wide"
           >
             <h1 className="text-xl">How it all began.</h1>
             <div className="mockup-code">

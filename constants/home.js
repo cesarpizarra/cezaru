@@ -217,8 +217,7 @@ export const featuredProjects = [
     githubUrl: "https://github.com/cesarpizarra/pabuya",
   },
   {
-    title:
-      "Development of Student Information System for Academia De Sta. Cecilia Foundation Inc.",
+    title: "Student Information System (SIS)",
     description:
       "This is our thesis project: a Student Information System (SIS) for Academia De Sta. Cecilia Foundation Inc",
     techsUsed: [

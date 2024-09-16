@@ -31,7 +31,7 @@ const Work = () => {
             {workExperience.map((work, index) => (
               <motion.li variants={fadeIn("up", "tween", 0.1, 0.6)} key={index}>
                 <div
-                  className={`timeline-box bg-base-200 p-8 ${index % 2 === 0 ? "timeline-start" : "timeline-end"}`}
+                  className={`timeline-box bg-base-200 px-4 py-7 ${index % 2 === 0 ? "timeline-start" : "timeline-end"}`}
                 >
                   <p className="italic">{work.date}</p>
                   <p className="text-primary">{work.isCurrent && "Present"}</p>
@@ -43,7 +43,7 @@ const Work = () => {
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 20 20"
                     fill="currentColor"
-                    className={`h-5 w-5 ${work.isCurrent ? "text-primary" : ""}`}
+                    className={`h-5 w-5 ${work.isCurrent ? "" : "text-primary"}`}
                   >
                     <path
                       fillRule="evenodd"
@@ -52,7 +52,7 @@ const Work = () => {
                     />
                   </svg>
                 </div>
-                <hr className={work.isCurrent ? "bg-primary" : ""} />
+                <hr className={work.isCurrent ? "" : "bg-primary"} />
               </motion.li>
             ))}
           </ul>
