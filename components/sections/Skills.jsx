@@ -34,7 +34,7 @@ const Skills = () => {
           <div className="flex flex-col gap-10 py-8">
             <div>
               <motion.h2
-                variants={fadeIn("up", "tween", 0.1, 0.6)}
+                variants={fadeIn("up", "tween", 0.2, 0.6)}
                 className="pb-2 text-center text-2xl tracking-wide"
               >
                 Frontend
@@ -60,7 +60,7 @@ const Skills = () => {
 
             <div>
               <motion.h2
-                variants={fadeIn("up", "tween", 0.1, 0.6)}
+                variants={fadeIn("up", "tween", 0.2, 0.6)}
                 className="pb-2 text-center text-2xl tracking-wide"
               >
                 Backend

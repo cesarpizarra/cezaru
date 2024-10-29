@@ -17,7 +17,7 @@ const Projects = () => {
         viewport={{ once: "false", amount: 0.45 }}
         className="mb-12"
       >
-        <motion.div className="rounded-2xl bg-base-300 p-8">
+        <motion.div className="rounded-2xl bg-base-300 p-8 shadow-xl">
           <motion.h2
             variants={fadeIn("up", "tween", 0.1, 0.6)}
             initial="hidden"
@@ -89,7 +89,7 @@ const Projects = () => {
           </div>
         </motion.div>
 
-        <motion.div className="mt-12 rounded-2xl bg-base-300 p-8">
+        <motion.div className="mt-12 rounded-2xl bg-base-300 p-8 shadow-xl">
           <motion.h2
             variants={fadeIn("up", "tween", 0.1, 0.6)}
             initial="hidden"

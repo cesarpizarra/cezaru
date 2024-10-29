@@ -12,7 +12,12 @@ const Hero = () => {
       className="relative mb-20 flex min-h-screen w-full flex-col items-center justify-center text-center text-white md:mb-0"
     >
       <motion.div className="mb-60 items-center md:flex">
-        <div className="mx-auto max-w-xs md:max-w-md">
+        <motion.div
+          initial={{ y: -30 }}
+          animate={{ y: [0, -10, 0] }}
+          transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
+          className="mx-auto max-w-xs md:max-w-md"
+        >
           <Image
             src="/hero-img.png"
             width={500}
@@ -21,7 +26,7 @@ const Hero = () => {
             style={{ width: "100%", height: "auto" }}
             className="-scale-x-100 rounded-md"
           />
-        </div>
+        </motion.div>
         <div>
           <motion.h1
             variants={fade(0.8, 0.4)}

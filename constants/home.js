@@ -286,22 +286,22 @@ export const otherProjects = [
 
 export const workExperience = [
   {
+    image: "/nord_oaks.png",
     position: "Full Stack Developer",
     company: "at Nord Oaks BPO",
     date: "2024 - Current - Full-time",
-    isCurrent: true,
   },
   {
+    image: "/freelance.jpg",
     position: "Web Developer",
     company: "Freelance Self Employed",
     date: "2023 - 2024  - Freelance",
-    isCurrent: false,
   },
   {
+    image: "/gip.svg",
     position: "Government Internship Program (GIP)",
     company: "Office of the House of Representative",
     date: "2 months - 2023 - On-the-job training",
-    isCurrent: false,
   },
 ];
 

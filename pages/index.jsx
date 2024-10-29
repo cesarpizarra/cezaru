@@ -13,7 +13,7 @@ export default function Home() {
         <title>Cesar Pizarra | Portfolio</title>
         <meta
           name="description"
-          content="Cesar Pizarra is an aspiring frontend web developer passionate about creating visually appealing and user-friendly websites. Explore my portfolio to see my work and learn more about my skills and projects."
+          content="Cesar Pizarra is a Full-stack Web Developer passionate about creating visually appealing and user-friendly websites. Explore my portfolio to see my work and learn more about my skills and projects."
         />
 
         <meta
