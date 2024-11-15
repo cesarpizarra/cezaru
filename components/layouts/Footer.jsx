@@ -5,7 +5,7 @@ import { socialVariants } from "../../utils/motion";
 
 const Footer = () => {
   return (
-    <section className="text-whiteSecondary mx-auto max-w-[1440px] px-5 py-6 md:px-10">
+    <section className="text-whiteSecondary relative z-50 mx-auto max-w-[1440px] px-5 py-6 md:px-10">
       <footer>
         <nav className="mb-4">
           <ul className="flex items-center justify-center gap-8">
