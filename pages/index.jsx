@@ -25,8 +25,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/my-logo.png" />
       </Head>
-      <main className="relative z-50 mx-auto max-w-6xl px-5 md:px-10 lg:px-12 xl:px-0">
-        <StarCanvas />
+      <StarCanvas />
+      <main className="relative z-20 mx-auto max-w-6xl px-5 md:px-10 lg:px-12 xl:px-0">
         <Hero />
         <About />
         <Skills />
