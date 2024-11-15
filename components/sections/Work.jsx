@@ -6,7 +6,7 @@ import { IoMdGitNetwork } from "react-icons/io";
 import Image from "next/image";
 const Work = () => {
   return (
-    <section className="relative mb-60 mt-36 scroll-mt-36" id="work">
+    <section className="relative mb-96 mt-36 scroll-mt-36" id="work">
       <motion.div
         variants={staggerContainer(0.4, 0.2)}
         initial="hidden"

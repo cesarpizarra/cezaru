@@ -13,7 +13,10 @@ const Contacts = () => {
         viewport={{ once: "false", amount: 0.45 }}
         className="mx-auto flex h-full w-full flex-col items-center justify-center text-center"
       >
-        <motion.p variants={fadeIn("up", "tween", 0.1, 0.6)}>
+        <motion.p
+          variants={fadeIn("up", "tween", 0.1, 0.6)}
+          className="text-md md:text-xl"
+        >
           {contactData.title}
         </motion.p>
         <motion.div

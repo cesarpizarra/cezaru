@@ -5,6 +5,7 @@ import Skills from "../components/sections/Skills";
 import Projects from "../components/sections/Projects";
 import Contacts from "../components/sections/Contacts";
 import Work from "../components/sections/Work";
+import StarCanvas from "../components/StarCanvas";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
         <link rel="icon" href="/my-logo.png" />
       </Head>
       <main className="relative z-20 mx-auto max-w-6xl px-5 md:px-10 lg:px-12 xl:px-0">
+        <StarCanvas />
         <Hero />
         <About />
         <Skills />

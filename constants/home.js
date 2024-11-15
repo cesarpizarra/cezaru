@@ -193,6 +193,7 @@ export const frontend = [
   "Node.js",
   "Mobile Responsive",
   "Git",
+  "Docker",
 ];
 
 export const backend = [
@@ -203,7 +204,9 @@ export const backend = [
   "MongoDB",
   "MySQL",
   "Postman",
+  "Authentication",
   "Git",
+  "Docker",
 ];
 
 export const featuredProjects = [

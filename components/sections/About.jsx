@@ -17,7 +17,7 @@ const About = () => {
         viewport={{ once: "false", amount: 0.45 }}
         className="w-full"
       >
-        <div className="flex flex-col gap-12 md:flex-row">
+        <div className="flex flex-col items-center gap-12 md:flex-row">
           <motion.div
             variants={fadeIn("up", "tween", 0.2, 0.4)}
             className="mb-4"
