@@ -27,7 +27,7 @@ const Hero = () => {
           </motion.h1>
           <motion.h2
             variants={fade(0.8, 0.5)}
-            className="mb-4 whitespace-normal text-3xl font-bold tracking-wide sm:text-4xl md:text-7xl"
+            className="mb-4 whitespace-normal text-2xl font-bold tracking-wide sm:text-4xl md:text-7xl"
           >
             I bring <span className="text-warning">ideas</span> to the{" "}
             <span className="text-primary">web</span>.
